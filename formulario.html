@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de Aluno - DSM</h1>
+    <p>Essa forma de cadastro é um método mais moderno e mais fácil, usando um formulário completo</p>
+
+    <form action="#" method="POST">
+
+        <fieldset>
+            <legend>Dados Pessoais</fieldset>
+
+                <label for="nome">Nome completo:</label>
+                <input type="text"id="nome" name="nome"required>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"name=email required> 
+
+                <br><br>
+
+                <label for="data-nascimento">Data de nascimento:</label>
+                <input type="date"id="data-nascimento" name="data-nascimento">
+
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Dados academicos</legend>
+
+                    <label for="curso">Curso</label>
+                    <select name="curso" id="curso">
+                        <option value="DSM">DSM</option>
+                        <option value="ADS">ADS</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+
+                    <br><br>
+
+                    <label>Período:</label>
+                    <input type="radio"id="manha" name="periodo"value="manha">
+                    <label for="manha">Manhã</label>
+
+                    <input type="radio"id="noite"name="periodo" value="noite">
+                    <label for="noite">Noite</label>
+
+                    <br><br>
+
+                    <label for="observaçoes">observaçoes:</label>
+                    <br>
+                    <textarea id="observaçoes" name="observaçoes" rows="5"cols="40"></textarea>
+                </fieldset>
+                <br>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpa</button>
+
+
+</form>
+</body>
+</html>
