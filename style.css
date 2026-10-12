@@ -1,0 +1,154 @@
+/* Estilo geral da página */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f7;
+    color: #243044;
+}
+
+header {
+    background-color: #17365d;
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+nav {
+    background-color: #102944;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #9fc9ff;
+}
+
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 18px;
+}
+
+.cartao {
+    background-color: white;
+    margin-bottom: 22px;
+    padding: 22px;
+    border: 1px solid #d5dce5;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Seção Sobre mim */
+
+#titulo-sobre {
+    color: #17365d;
+    border-bottom: 2px solid #7ba6d8;
+    padding-bottom: 8px;
+}
+
+.lista-sobre {
+    background-color: #f3f7fc;
+    padding: 18px 18px 18px 38px;
+    border-radius: 5px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Seção Habilidades */
+
+.habilidade {
+    border: 1px solid #c5d5e8;
+    border-left: 5px solid #3973ac;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 5px;
+    background-color: #f8fbff;
+}
+
+.habilidade h4 {
+    color: #23619a;
+    margin-top: 0;
+}
+
+.habilidade p {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.5;
+}
+
+.habilidade:hover {
+    background-color: #e7f1fc;
+}
+
+/* Campo de e-mail: seletor de atributo */
+
+input[type="email"] {
+    width: 100%;
+    max-width: 420px;
+    padding: 12px;
+    border: 1px solid #aab7c7;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input[type="email"]:focus {
+    outline: 2px solid #3973ac;
+}
+
+/* Link do GitHub: seletor de atributo */
+
+a[href^="https://github.com"] {
+    color: #23619a;
+    font-weight: bold;
+}
+
+/* Rodapé */
+
+footer {
+    position: relative;
+    background-color: #102944;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Ajuste para telas menores */
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .cartao {
+        padding: 16px;
+    }
+}
