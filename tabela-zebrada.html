@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Zebrada</title>
+    <!-- CSS INTERNO: estilização dentro do próprio HTML. É inserido dentro da tag <head> -->
+
+        <style>
+            /* odd -> impar */
+            tr:nth-child(odd)
+            {
+                background-color:#e8eef1;
+            }
+              /* even -> par */
+            tr:nth-child(even)
+            {
+                background-color: #c9daee;
+            }
+
+            body
+            {
+                font-family: 'Verdana';
+            }
+        </style>
+
+</head>
+<body>
+    <!-- Tabela Zebrada -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="6">
+                    <h3>Tabela de clientes</h3>
+                </th>
+            </tr>
+            <tr>
+                <th scope="col" colspan="3">Dados pessoais</th>
+                <th scope="col" colspan="2">Endereço</th>
+                <th scope="col">Contato</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Dados Pessoais -->
+                <th scope="col">Nome:</th>
+                <th scope="col">Idade:</th>
+                <th scope="col">Profissão:</th>
+
+                <!-- Dados de Endereço -->
+                <th scope="col">Rua:</th>
+                <th scope="col">Cidade:</th>
+
+                <!--Dados de Contato  -->
+                <th scope="col">E-mail:</th>
+            </tr>
+            <tr>
+                <!-- Cliente 1 -->
+                <td> Ana de Souza Pereira</td>
+                <td>25</td>
+                <td>Engenharia</td>
+                <td>Av. A</td>
+                <td>São Paulo</td>
+                <td>ana.pereira@email.com</td>
+            </tr>
+            <tr>
+                    <!-- Cliente 2 -->
+                <td> João Ricardo das Neves</td>
+                <td>30</td>
+                <td>Advogado</td>
+                <td>Rua B</td>
+                <td>Rio de Janeiro</td>
+                <td>joao.neves@email.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
